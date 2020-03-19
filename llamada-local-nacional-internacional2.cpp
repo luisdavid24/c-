@@ -15,7 +15,7 @@ int main(int argc, char** argv) {
 			}else if(minutos>5){
 					minutos=minutos*200;
 				}
-			//	break;
+			
 	}else if(strcmp(llamada,"nacional")==0)
 		{ 	if (minutos<=5)
 				{	minutos=minutos*200;
