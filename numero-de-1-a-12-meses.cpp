@@ -3,7 +3,6 @@
 using namespace std;
 //en las funciones se debe poner un numero y debe devolver el equivalente en meses
 int numero;
-//char resultado[20];
 
 void mes(int numero)
 {	if(numero==1)
