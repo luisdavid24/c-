@@ -2,12 +2,8 @@
 using namespace std;
 int n,cod,i,cp;
 float n1,n2,n3,nf,snf;
-
-int main(int argc, char** argv) {
-	cout<<"Cantidad de estudiantes: ";
-	cin>>n;
-	i=1,cp=0,snf=0;
-	while (i<=n)
+void GanaOPierde(int n,int i)
+{	while (i<=n)
 	{	cout<<"Codigo: ";
 		cin>>cod;
 		cout<<"Nota uno: ";
@@ -24,7 +20,15 @@ int main(int argc, char** argv) {
 		}
 		i++;
 		
-	}
+	}	
+}
+
+int main(int argc, char** argv) {
+	cout<<"Cantidad de estudiantes: ";
+	cin>>n;
+	i=1,cp=0,snf=0;
+	GanaOPierde(n,i);
+	
 	cout<<"Perdieron un total de: "<<cp<<"\n";
 	cout<<"Ganaron un total de: "<<n-cp<<"\n";
 	cout<<"Promedio grupo es de: "<<snf/n;
