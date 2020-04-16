@@ -6,6 +6,7 @@ float potencia(int numero1, int numero2)
 {	
 //	return pow(nuermo1,numero2);
 // TENGO PROBLEMAS CON HACER LA POTENCIA :(
+// TENGO MUY CLARO COMO PLANTEAR ESTA PARTE LO INTENTE CON CONDICIONALES Y NO DIO
 }
 void multiplo(int numero1,int numero2)
 {	if(numero1%3==0)
