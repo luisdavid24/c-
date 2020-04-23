@@ -1,12 +1,16 @@
 #include <iostream>
 #include <math.h>
-int numero1,numero2,resultadoPotencia;
+int numero1,numero2,resultadoPotencia,i;
 using namespace std;
 float potencia(int numero1, int numero2)
-{	
-//	return pow(nuermo1,numero2);
-// TENGO PROBLEMAS CON HACER LA POTENCIA :(
-// TENGO MUY CLARO COMO PLANTEAR ESTA PARTE LO INTENTE CON CONDICIONALES Y NO DIO
+{	float resultado;
+	resultado=0;
+	while (i<=numero2){
+			resultado+=numero1;
+			i++;
+	}
+	return resultado;
+ 	
 }
 void multiplo(int numero1,int numero2)
 {	if(numero1%3==0)
@@ -38,9 +42,11 @@ int main(int argc, char** argv) {
 	cin>>numero1;
 	cout<<"Escribe el segundo numero(entero): ";
 	cin>>numero2;
+	i=0;
 	resultadoPotencia=potencia(numero1,numero2);
 	multiplo(numero1,numero2);
 	par(numero1,numero2);
+	cout<<"Al levar el numero1 a la potencia numero2 da como resultado: "<<resultadoPotencia;
 	
 	return 0;
 }
