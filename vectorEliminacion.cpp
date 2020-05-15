@@ -4,18 +4,7 @@ int *vector;
 int i,n,f,c,j,val,pos;
 
 using namespace std;
-int funcionEliminiar(int *vector,int val)
-{	i=0;
-	while(i<n && val!=vec[i])
-	{	i++;
-	}
-	if(i<n)
-	{	for(j=i;j<n-1;i++){
-			vector[j]=vector[j+1];
-		}
-		n--;
-	}
-}
+
 int busquedaElemento(int *vector,int n,int val)
 {int i=0;
  while (i<n && val != vector[i])
@@ -53,6 +42,6 @@ int main(int argc, char** argv) {
 	} else { cout<<"\nEncontrado en posicion"<<pos;
 			}	
 			
-	funcionEliminiar
+//	funcionEliminiar
 	return 0;
 }
